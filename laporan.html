@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Laporan Tahunan</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo_perpusling.jpg" alt="Logo" class="logo-img">
+      <span class="logo-text">PerpusLing Web</span>
+    </div>
+    <nav class="nav">
+      <a href="beranda.html">
+        <ion-icon name="home"></ion-icon>Beranda
+      </a>
+      <div class="dropdown">
+        <input type="checkbox" id="toggleTransaksi">
+        <label for="toggleTransaksi" class="dropbtn">
+          <ion-icon name="cash-outline"></ion-icon>Transaksi
+        </label>
+        <div class="dropdown-content">
+          <a href="transaksi.html">Form Transaksi</a>
+          <a href="stok.html">Stok Barang</a>
+          <a href="laporan.html">Laporan</a>
+        </div>
+      </div>
+      <a href="profil.html">
+        <ion-icon name="business-outline"></ion-icon>Profil
+      </a>
+      <a href="login.html">
+        <ion-icon name="log-in-outline"></ion-icon>Login
+      </a>
+    </nav>
+  </header>
+  <main>
+    <div class="addtb">
+      <div class="addtb-header">
+        <h3>Laporan Perpustakaan Tahunan<span>*</span></h3>
+        <button class="btn-target">Capaian Target</button>
+      </div>
+
+      <div class="filter-bar">
+        <div class="filter-groupleft">
+          <label>Tampilkan</label>
+          <select>
+            <option>10</option>
+            <option>25</option>
+            <option>50</option>
+          </select>
+          <span>Data</span>
+        </div>
+
+        <select>
+          <option>Petugas</option>
+          <option>Aresta</option>
+          <option>Sulis</option>
+          <option>Edrik</option>
+          <option>Fabian</option>
+        </select>
+
+        <input type="date">
+        <input type="text" placeholder="Pencarian">
+
+        <button class="btn-search">Cari</button>
+        <button class="btn-reset">Reset</button>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Bulan</th>
+              <th>Jumlah Buku Dipinjam</th>
+              <th>Jumlah Barang Terjual</th>
+              <th>Total Pendapatan</th>
+              <th>Transaksi Online</th>
+              <th>Transaksi Offline</th>
+              <th>Keterangan</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>1</td>
+              <td>Januari</td>
+              <td>320</td>
+              <td>95</td>
+              <td>Rp 4.850.000</td>
+              <td>60</td>
+              <td>40</td>
+              <td>Online dominan (60%)</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Februari</td>
+              <td>280</td>
+              <td>88</td>
+              <td>Rp 4.200.000</td>
+              <td>55</td>
+              <td>45</td>
+              <td>Online lebih tinggi (55%)</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>Maret</td>
+              <td>350</td>
+              <td>110</td>
+              <td>Rp 5.600.000</td>
+              <td>70</td>
+              <td>40</td>
+              <td>Online sangat aktif</td>
+            </tr>
+
+            <tr>
+              <td>4</td>
+              <td>April</td>
+              <td>300</td>
+              <td>90</td>
+              <td>Rp 4.750.000</td>
+              <td>48</td>
+              <td>52</td>
+              <td>Offline sedikit dominan</td>
+            </tr>
+
+            <tr>
+              <td>5</td>
+              <td>Mei</td>
+              <td>370</td>
+              <td>120</td>
+              <td>Rp 6.200.000</td>
+              <td>75</td>
+              <td>45</td>
+              <td>Online paling tinggi</td>
+            </tr>
+
+            <tr>
+              <td>6</td>
+              <td>Juni</td>
+              <td>340</td>
+              <td>105</td>
+              <td>Rp 5.450.000</td>
+              <td>62</td>
+              <td>43</td>
+              <td>Online stabil</td>
+            </tr>
+
+            <tr>
+              <td>7</td>
+              <td>Juli</td>
+              <td>390</td>
+              <td>130</td>
+              <td>Rp 6.800.000</td>
+              <td>80</td>
+              <td>50</td>
+              <td>Online sangat dominan</td>
+            </tr>
+
+            <tr>
+              <td>8</td>
+              <td>Agustus</td>
+              <td>360</td>
+              <td>115</td>
+              <td>Rp 6.050.000</td>
+              <td>58</td>
+              <td>57</td>
+              <td>Online & offline seimbang</td>
+            </tr>
+
+            <tr>
+              <td>9</td>
+              <td>September</td>
+              <td>330</td>
+              <td>100</td>
+              <td>Rp 5.100.000</td>
+              <td>50</td>
+              <td>50</td>
+              <td>Transaksi merata</td>
+            </tr>
+
+            <tr>
+              <td>10</td>
+              <td>Oktober</td>
+              <td>410</td>
+              <td>140</td>
+              <td>Rp 7.250.000</td>
+              <td>85</td>
+              <td>55</td>
+              <td>Puncak transaksi online</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+
+      <div class="footb">
+
+        <div class="footb-info">
+          <div class="showing">
+            Menampilkan 1–10 dari 2
+          </div>
+
+          <div class="pagination">
+            <a href="#">«</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">»</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

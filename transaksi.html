@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/logo_perpusling.jpg" alt="Logo" class="logo-img">
+            <span class="logo-text">PerpusLing Web</span>
+        </div>
+        <nav class="nav">
+            <a href="beranda.html">
+                <ion-icon name="home"></ion-icon>Beranda
+            </a>
+            <div class="dropdown">
+                <input type="checkbox" id="toggleTransaksi">
+                <label for="toggleTransaksi" class="dropbtn">
+                    <ion-icon name="cash-outline"></ion-icon>Transaksi
+                </label>
+                <div class="dropdown-content">
+                    <a href="transaksi.html">Form Transaksi</a>
+                    <a href="stok.html">Stok Barang</a>
+                    <a href="laporan.html">Laporan</a>
+                </div>
+            </div>
+            <a href="profil.html">
+                <ion-icon name="business-outline"></ion-icon>Profil
+            </a>
+            <a href="login.html">
+                <ion-icon name="log-in-outline"></ion-icon>Login
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <center>
+            <h1>Form Pelaporan Transaksi<h1>
+                    <form class="formcard">
+                        <table>
+                            <tr>
+                                <td> Nama Petugas:</td>
+                                <td> <input type="text" name="nama" placeholder="Masukkan Nama" required>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Jenis Transaksi:</td>
+                                <td><select name="transaksi" required>
+                                        <option value="">Pilih Transaksi</option>
+                                        <option value="Laporan harian">Peminjaman Buku</option>
+                                        <option value="Laporan mingguan">Pengembalian Buku</option>
+                                        <option value="laporan bulanan">Penjualan Buku</option>
+                                        <option value="penjualan online realtime">Penjualan Alat Tulis</option>
+                                    </select></td>
+                            </tr>
+
+                            <tr>
+                                <td>Tanggal:</td>
+                                <td> <input type="date" required></td>
+                            </tr>
+                            <tr>
+                                <td>Catatan:<br></td>
+                                <td><textarea name="pesan" rows="5" cols="40" placeholder="Tulis Catatan Transaki"
+                                        required></textarea></td>
+                            </tr>
+
+                            <tr>
+                                <td>Bukti Transaksi:</td>
+                                <td> <input type="file"> </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <input type="submit" value="Simpan" onclick="return fun();" />
+                                </td> <br>
+                                <td align="center"> <a href="daftar_transaksi.html">Daftar Transaksi sudah
+                                        selesai</a></td>
+                            </tr>
+                        </table>
+                    </form>
+        </center>
+    </main>
+
+
+    <footer class="footer">
+        <ul class="social_icon">
+
+            <a href="https://www.facebook.com/ayokeperpusnas/?locale=id_ID"><ion-icon
+                    name="logo-facebook"></ion-icon></a>
+
+            <a
+                href="https://www.instagram.com/perpusnas.go.id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><ion-icon
+                    name="logo-twitter"></ion-icon></a>
+
+            <a
+                href="https://www.instagram.com/perpusnas.go.id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><ion-icon
+                    name="logo-instagram"></ion-icon></a>
+
+            <a href="https://www.linkedin.com/company/perpustakaan-nasional-republik-indonesia-perpusnas-ri"><ion-icon
+                    name="logo-linkedin"></ion-icon></a>
+        </ul>
+
+        <p>&copy; 2025 PerpusLing. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

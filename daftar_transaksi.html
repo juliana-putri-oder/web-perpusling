@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAFTAR TRANSAKSI SELESAI</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/logo_perpusling.jpg" alt="Logo" class="logo-img">
+            <span class="logo-text">PerpusLing Web</span>
+        </div>
+        <nav class="nav">
+            <a href="beranda.html">
+                <ion-icon name="home"></ion-icon>Beranda
+            </a>
+            <div class="dropdown">
+                <input type="checkbox" id="toggleTransaksi">
+                <label for="toggleTransaksi" class="dropbtn">
+                    <ion-icon name="cash-outline"></ion-icon>Transaksi
+                </label>
+                <div class="dropdown-content">
+                    <a href="transaksi.html">Form Transaksi</a>
+                    <a href="stok.html">Stok Barang</a>
+                    <a href="laporan.html">Laporan</a>
+                </div>
+            </div>
+            <a href="profil.html">
+                <ion-icon name="business-outline"></ion-icon>Profil
+            </a>
+            <a href="login.html">
+                <ion-icon name="log-in-outline"></ion-icon>Login
+            </a>
+        </nav>
+    </header>
+    <main class="center">
+        <h1 align="center">Daftar Transaksi Selesai</h1>
+        <table border="1" cellspacing="7" align="center">
+            <thead>
+                <th>No</th>
+                <th>Tanggal</th>
+                <th>Nama Transaksi</th>
+                <th>Platform</th>
+                <th>Jumlah</th>
+                <th>Harga/barang</th>
+                <th>Total Transaksi</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td> 1.</td>
+                    <td>01/12/2025</td>
+                    <td>Penjualan Buku</td>
+                    <td>Shopee</td>
+                    <td class="jmlh">4</td>
+                    <td class="Harga">38000</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>2.</td>
+                    <td>01/12/2025</td>
+                    <td>Peminjaman Buku</td>
+                    <td>Web PerpusLing</td>
+                    <td class="jmlh">4</td>
+                    <td class="Harga">0</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>3.</td>
+                    <td>02/12/2025</td>
+                    <td>Penjualan Buku</td>
+                    <td>Offline</td>
+                    <td class="jmlh">9</td>
+                    <td class="Harga">34000</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>4.</td>
+                    <td>03/12/2025</td>
+                    <td>Pengembalian Buku</td>
+                    <td>Web PerpusLing</td>
+                    <td class="jmlh">3</td>
+                    <td class="Harga">59000</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>5..</td>
+                    <td>03/12/2025</td>
+                    <td>Pengembalian Buku terlambat (dengan denda)</td>
+                    <td>Web PerpusLing</td>
+                    <td class="jmlh">1</td>
+                    <td class="Harga">25000</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>04/12/2025</td>
+                    <td>Penjualan Buku</td>
+                    <td>Tiktok Shop</td>
+                    <td class="jmlh">11</td>
+                    <td class="Harga">23000</td>
+                    <td></td>
+                </tr>
+
+
+            </tbody>
+        </table>
+        <p align="center"><strong>Total Transaksi: </strong><span id="total"></span></p>
+    </main>
+    <script src="script.js"></script>
+    <div class="fcenter">
+        <ul class="social_icon">
+
+            <a href="https://www.facebook.com/ayokeperpusnas/?locale=id_ID"><ion-icon
+                    name="logo-facebook"></ion-icon></a>
+
+            <a
+                href="https://www.instagram.com/perpusnas.go.id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><ion-icon
+                    name="logo-twitter"></ion-icon></a>
+
+            <a
+                href="https://www.instagram.com/perpusnas.go.id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><ion-icon
+                    name="logo-instagram"></ion-icon></a>
+
+            <a href="https://www.linkedin.com/company/perpustakaan-nasional-republik-indonesia-perpusnas-ri"><ion-icon
+                    name="logo-linkedin"></ion-icon></a>
+        </ul>
+
+        <p>&copy; 2025 PerpusLing. All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>
